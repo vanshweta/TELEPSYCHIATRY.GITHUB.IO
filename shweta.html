@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Management</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('pictures/final.jpg');
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Food Management</h1>
+  </header>
+
+  <form id="messForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="hostel">Hostel:</label>
+    <select id="hostel" name="hostel" required>
+      <option value="">Select Hostel</option>
+      <option value="Girls Hostel">Girls Hostel</option>
+      <option value="Boys Hostel 1">Boys Hostel 1</option>
+      <option value="Boys Hostel 2">Boys Hostel 2</option>
+    </select>
+
+    <label for="skipMeal">Select Meals to Skip:</label>
+    <input type="checkbox" id="breakfast" name="skipMeal" value="breakfast">
+    <label for="breakfast">Breakfast</label>
+    <input type="checkbox" id="lunch" name="skipMeal" value="lunch">
+    <label for="lunch">Lunch</label>
+    <input type="checkbox" id="snacks" name="skipMeal" value="snacks">
+    <label for="snacks">Snacks</label>
+    <input type="checkbox" id="dinner" name="skipMeal" value="dinner">
+    <label for="dinner">Dinner</label>
+
+    <label for="haveMeal">Do you want to have a meal?</label>
+    <select id="haveMeal" name="haveMeal" required>
+      <option value="">Select Option</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
